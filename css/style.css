@@ -1,0 +1,618 @@
+:root {
+  --paper: #faf6f1;
+  --ink: #432c35;
+  --accent: #722d40;
+  --on-accent: #fff9f4;
+  --muted: #76686b;
+  --line: #d8cbca;
+  --display-font: "Cormorant Garamond", Georgia, serif;
+  --body-font: "Inter", sans-serif;
+  --ribbon-bg: #722d40;
+  --ribbon-color: #fff6ed;
+}
+.brand {
+  font-size: 2.8rem;
+  letter-spacing: -0.06em;
+  line-height: 0.7;
+  font-weight: 500;
+}
+.brand small {
+  letter-spacing: 0.21em;
+  font-size: 0.54rem;
+  line-height: 1.2;
+  margin-top: 12px;
+  color: var(--muted);
+}
+.brand-period {
+  color: var(--accent);
+}
+em {
+  font-weight: 400;
+}
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.7rem;
+}
+.btn {
+  border-radius: 2px;
+}
+.studio-hero {
+  display: grid;
+  grid-template-columns: 0.85fr 1.1fr;
+  gap: 90px;
+  padding-block: 66px 80px;
+  align-items: center;
+}
+.studio-hero h1 {
+  font-size: clamp(5.5rem, 8.5vw, 8.4rem);
+  line-height: 0.8;
+  letter-spacing: -0.055em;
+  margin: 36px 0 30px;
+}
+.studio-hero h1 em {
+  color: var(--accent);
+}
+.studio-hero-copy > p {
+  max-width: 330px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+.hero-signature {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+.hero-signature > span {
+  font-family: var(--display-font);
+  font-size: 2.7rem;
+  font-style: italic;
+  color: var(--accent);
+  border-right: 1px solid var(--line);
+  padding-right: 25px;
+  line-height: 1;
+}
+.hero-signature p {
+  font-size: 0.7rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.studio-hero-visual {
+  position: relative;
+  padding-left: 15px;
+}
+.hero-frame {
+  height: 615px;
+  border-radius: 210px 210px 0 0;
+}
+.hero-frame img {
+  object-position: 57% center;
+}
+.editorial-note {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  font-size: 0.58rem;
+  letter-spacing: 0.13em;
+  color: var(--muted);
+}
+.hero-sticker {
+  position: absolute;
+  bottom: 85px;
+  left: -55px;
+  width: 156px;
+  height: 156px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--paper);
+  color: var(--accent);
+  font-family: var(--display-font);
+  font-size: 1.9rem;
+  line-height: 1.05;
+  transform: rotate(-12deg);
+  text-align: center;
+}
+.studio-manifesto {
+  background: #eaddd6;
+  padding: 26px 0;
+}
+.studio-manifesto .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.studio-manifesto p {
+  font-family: var(--display-font);
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+}
+.studio-manifesto em {
+  color: var(--accent);
+}
+.studio-manifesto span {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+}
+.section-title {
+  font-size: 4.7rem;
+  line-height: 0.96;
+}
+.section-title em {
+  color: var(--accent);
+}
+.studio-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.beauty-service:nth-child(2) {
+  padding-top: 58px;
+}
+.beauty-service .photo {
+  height: 320px;
+}
+.beauty-service img {
+  object-position: center center;
+}
+.service-index {
+  position: absolute;
+  left: 18px;
+  bottom: 12px;
+  color: white;
+  font-family: var(--display-font);
+  font-size: 3rem;
+  text-shadow: 0 2px 12px #0009;
+}
+.beauty-service h3 {
+  font-size: 2.8rem;
+  margin: 22px 0 14px;
+}
+.beauty-service > p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 320px;
+}
+.service-types {
+  display: block;
+  font-size: 0.7rem;
+  margin: 16px 0 25px;
+  color: var(--accent);
+}
+.beauty-service .text-link {
+  font-size: 0.8rem;
+}
+.studio-about {
+  background: #eee5de;
+}
+.studio-about-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+.studio-interior {
+  height: 600px;
+}
+.studio-interior img {
+  object-position: 40% center;
+}
+.interior-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--accent);
+  color: var(--paper);
+  padding: 16px 25px;
+  letter-spacing: 0.16em;
+  font-size: 0.65rem;
+}
+.studio-about-copy .section-title {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+.studio-about-copy > p {
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.studio-principles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 32px 0;
+}
+.studio-principles > div {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.studio-principles span {
+  font-size: 0.65rem;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 15px;
+}
+.studio-principles h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.studio-principles p {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.studio-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 25px;
+}
+.studio-gallery-grid .photo {
+  height: 370px;
+  display: block;
+}
+.studio-gallery-grid .gallery-button:nth-child(2) {
+  padding-top: 60px;
+}
+.studio-gallery-grid .gallery-button:nth-child(5) {
+  padding-top: 25px;
+}
+.studio-gallery-grid .gallery-button:nth-child(3n) .photo {
+  border-radius: 130px 130px 0 0;
+}
+.studio-gallery-grid .gallery-button:nth-child(4) .photo {
+  height: 420px;
+}
+.studio-gallery-grid .gallery-button:nth-child(6) .photo {
+  height: 410px;
+}
+.testimonials {
+  background: #722d40;
+  --ink: #fff6ed;
+  --paper: #722d40;
+  --muted: #e2c8ca;
+  --line: #a36878;
+  --accent: #edd8be;
+  color: var(--ink);
+}
+.testimonials .section-title em,
+.testimonials .eyebrow {
+  color: #edd8be;
+}
+.testimonials .quote {
+  margin: 0;
+}
+.testimonials .quote p {
+  font-size: 2rem;
+}
+.studio-contact .contact-card {
+  background: #eee5de;
+  padding: 42px;
+}
+.studio-contact .contact-card h3 {
+  font-size: 3rem;
+}
+.contact-card .illustrative {
+  font-size: 0.75rem;
+  margin: 16px 0 0;
+}
+.contact-card h3 em {
+  color: var(--accent);
+}
+.studio-contact .section-title {
+  font-size: 4.5rem;
+}
+.site-footer .brand {
+  font-size: 2.7rem;
+}
+.dialog h2 {
+  font-size: 2.8rem;
+}
+.dialog h3 {
+  font-size: 1.8rem;
+}
+@media (max-width: 1100px) {
+  .studio-hero {
+    gap: 65px;
+    padding-block: 55px;
+  }
+  .hero-frame {
+    height: 570px;
+  }
+  .hero-sticker {
+    left: -35px;
+    width: 135px;
+    height: 135px;
+    font-size: 1.75rem;
+  }
+  .studio-hero h1 {
+    font-size: 7rem;
+  }
+  .studio-about-grid {
+    gap: 55px;
+  }
+  .studio-services-grid {
+    gap: 24px;
+  }
+  .beauty-service .photo {
+    height: 290px;
+  }
+  .studio-about-copy .section-title {
+    font-size: 3.5rem;
+  }
+  .studio-about-copy > p {
+    font-size: 0.875rem;
+  }
+  .studio-interior {
+    height: 620px;
+  }
+  .section-title {
+    font-size: 4.1rem;
+  }
+}
+@media (max-width: 800px) {
+  .brand {
+    font-size: 2.5rem;
+  }
+  .brand small {
+    font-size: 0.46rem;
+  }
+  .studio-hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding-block: 50px;
+  }
+  .studio-hero h1 {
+    font-size: 6rem;
+  }
+  .hero-frame {
+    height: 500px;
+    border-radius: 170px 170px 0 0;
+  }
+  .studio-hero-visual {
+    padding-left: 0;
+  }
+  .hero-sticker {
+    display: none;
+  }
+  .editorial-note {
+    font-size: 0.5rem;
+    gap: 15px;
+    line-height: 1.6;
+  }
+  .editorial-note span:last-child {
+    display: none;
+  }
+  .studio-hero-copy .eyebrow {
+    font-size: 0.65rem;
+    line-height: 1.9;
+  }
+  .studio-hero .btn {
+    padding: 13px 15px;
+    font-size: 0.8rem;
+  }
+  .studio-hero p {
+    font-size: 0.875rem;
+  }
+  .hero-signature {
+    margin-top: 30px;
+    gap: 17px;
+  }
+  .hero-signature > span {
+    padding-right: 18px;
+  }
+  .studio-manifesto .wrap {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .studio-manifesto p {
+    font-size: 2.3rem;
+  }
+  .studio-manifesto span {
+    font-size: 0.6rem;
+  }
+  .studio-services-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  .beauty-service:nth-child(2) {
+    padding-top: 0;
+  }
+  .beauty-service {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    column-gap: 30px;
+    align-content: start;
+  }
+  .beauty-service .photo {
+    grid-row: 1/6;
+    height: 310px;
+  }
+  .beauty-service h3 {
+    margin-top: 22px;
+    font-size: 2.6rem;
+  }
+  .beauty-service .text-link {
+    justify-self: start;
+    margin-top: 0;
+    align-self: start;
+  }
+  .service-types {
+    margin: 15px 0 22px;
+  }
+  .studio-about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .studio-interior {
+    height: 400px;
+  }
+  .studio-about-copy .section-title {
+    font-size: 3.8rem;
+  }
+  .studio-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 18px;
+  }
+  .studio-gallery-grid .photo {
+    height: 320px;
+  }
+  .studio-gallery-grid .gallery-button:nth-child(2) {
+    padding-top: 45px;
+  }
+  .studio-gallery-grid .gallery-button:nth-child(5) {
+    padding: 0;
+  }
+  .studio-gallery-grid .gallery-button:nth-child(4) .photo,
+  .studio-gallery-grid .gallery-button:nth-child(6) .photo {
+    height: 320px;
+  }
+  .studio-gallery-grid .gallery-button:nth-child(2n) {
+    padding-top: 35px;
+  }
+  .studio-gallery-grid .gallery-button:nth-child(3n) .photo {
+    border-radius: 0;
+  }
+  .studio-gallery-grid .gallery-button:nth-child(3) .photo {
+    border-radius: 120px 120px 0 0;
+  }
+  .studio-contact .section-title {
+    font-size: 3.8rem;
+  }
+  .section-title {
+    font-size: 3.8rem;
+  }
+  .testimonials .quote-grid {
+    gap: 35px;
+  }
+}
+@media (max-width: 550px) {
+  .studio-hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 44px 42px;
+  }
+  .studio-hero h1 {
+    font-size: clamp(5.3rem, 25.3vw, 6.5rem);
+    line-height: 0.79;
+    margin: 28px 0;
+  }
+  .studio-hero-copy {
+    position: relative;
+  }
+  .studio-hero h1 br:nth-child(2) {
+    display: none;
+  }
+  .studio-hero-copy > p {
+    max-width: 300px;
+    margin-bottom: 24px;
+  }
+  .studio-hero-copy .btn {
+    padding: 15px 22px;
+    font-size: 0.8rem;
+  }
+  .hero-signature {
+    display: none;
+  }
+  .hero-frame {
+    height: 415px;
+    border-radius: 180px 180px 0 0;
+    max-width: 400px;
+    margin-left: 30px;
+  }
+  .hero-frame img {
+    object-position: 65% center;
+  }
+  .hero-sticker {
+    display: flex;
+    bottom: 60px;
+    left: 0;
+    width: 108px;
+    height: 108px;
+    font-size: 1.45rem;
+  }
+  .editorial-note {
+    padding-left: 32px;
+    font-size: 0.54rem;
+    margin-top: 15px;
+  }
+  .studio-manifesto p {
+    font-size: 2.25rem;
+  }
+  .studio-services-grid {
+    gap: 36px;
+  }
+  .beauty-service {
+    display: block;
+  }
+  .beauty-service .photo {
+    height: 340px;
+  }
+  .beauty-service h3 {
+    margin: 20px 0 13px;
+  }
+  .service-types {
+    margin: 14px 0 20px;
+  }
+  .studio-about-copy .section-title {
+    font-size: 3.4rem;
+  }
+  .studio-interior {
+    height: 350px;
+  }
+  .studio-gallery-grid .photo,
+  .studio-gallery-grid .gallery-button:nth-child(4) .photo,
+  .studio-gallery-grid .gallery-button:nth-child(6) .photo {
+    height: 250px;
+  }
+  .gallery-caption {
+    font-size: 0.75rem;
+  }
+  .gallery-caption span:last-child {
+    display: none;
+  }
+  .studio-principles {
+    gap: 22px;
+  }
+  .studio-principles h3 {
+    font-size: 1.55rem;
+  }
+  .studio-contact .contact-card {
+    padding: 30px;
+  }
+  .section-title,
+  .studio-contact .section-title {
+    font-size: 3.5rem;
+  }
+  .header-action {
+    font-size: 0.7rem;
+    padding: 11px 12px;
+  }
+  .testimonials .quote p {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 370px) {
+  .studio-hero h1 {
+    font-size: 5.7rem;
+  }
+  .section-title,
+  .studio-contact .section-title {
+    font-size: 3rem;
+  }
+  .studio-gallery-grid .photo,
+  .studio-gallery-grid .gallery-button:nth-child(4) .photo,
+  .studio-gallery-grid .gallery-button:nth-child(6) .photo {
+    height: 215px;
+  }
+  .hero-frame {
+    height: 370px;
+    margin-left: 20px;
+  }
+}
